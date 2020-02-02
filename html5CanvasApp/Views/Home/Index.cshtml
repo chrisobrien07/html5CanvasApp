@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<div class="row">
+    <div class="col-lg-2 panel panel-default" id="toolshelf-container">
+        <div class="">
+            <div class="panel-heading">Toolshelf</div>
+
+
+            <div class="panel-body">
+                <ul class="list-unstyled" id="toolshelf-list">
+                    <li class="btn btn-default" data-command-name="commandAddState">Add State</li>
+                    <li class="btn btn-default" data-command-name="commandAddTransition">Add Transition</li>
+                    <li class="btn btn-default" data-command-name="commandExportToXml">Export xml</li>
+                    <li class="btn btn-default" data-command-name="commandAlignHorizontal">Align Horizontal</li>
+                    <li class="btn btn-default" data-command-name="commandExportToXML">Export To XML</li>
+                    <li class="btn btn-default" data-command-name="commandRemoveSelected">Export To XML</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-9 active" id="canvas-container">
+        <canvas id="canvasOne">
+            Your browser does not support HTML5 Canvas.
+        </canvas>
+    </div>
+
+    <div class="col-lg-1">
+        <div class="">
+            <h4>Current Command</h4>
+            <p id="curr-cmd"></p>
+        </div>
+
+        <div class="">
+            <h4>Mouse Position</h4>
+            <p id="mouse-pos"></p>
+        </div>
+
+        <div class="">
+            <h4>States:</h4>
+            <p id="state-list"></p>
+        </div>
+    </div>
+
+
+</div>
+<div class="row">
+    <div class="col-lg-12" id="prompt-container">
+
+        <input id="prompt-input" type="text" placeholder="Select next command from toolshelf" class="form-control" />
+        <p>History:</p>
+        <div id="prompt-history">
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+@section scripts{
+    <script src="/Scripts/Canvas/point.js"></script>
+    <script src="/Scripts/Canvas/state.js"></script>
+    <script src="/Scripts/Canvas/transition.js"></script>
+    <script src="/Scripts/Canvas/commandAddState.js"></script>
+    <script src="/Scripts/Canvas/commandAddTransition.js"></script>
+    <script src="/Scripts/Canvas/commandAlignHorizontal.js"></script>
+    <script src="/Scripts/Canvas/fncSelect.js"></script>
+    <script src="/Scripts/Canvas/commandExportToXML.js"></script>
+    <script src="/Scripts/Canvas/app.js"></script>
+    <script src="~/Scripts/Canvas/main.js"></script>
+
+}

@@ -1,0 +1,35 @@
+﻿#main-container {
+    min-width: 1800px;
+    margin-top: 60px;
+    padding: 0;
+}
+
+#toolshelf-container {
+    padding: 0;
+}
+
+#toolshelf-list li {
+    width: 120px;
+    text-align: left;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#canvas-container {
+    
+    padding: 0;
+}
+
+#canvas-container canvas {
+    padding: 0;
+    cursor:crosshair;
+}
+
+#prompt-container {
+    padding: 0;
+}
+
+#prompt-input {
+    font-family: Consolas;
+    font-size: small;
+}
